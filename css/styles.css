@@ -77,18 +77,24 @@ src: local('Baron Neue Italic'), url('Baron Neue Italic.woff') format('woff');
 
 /**************** Material Design Lite https://getmdl.io *******************/
 
-.demo-layout-transparent {
+.mapLayout {
 	background-image: url(../images/mapGrey.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
+
+.mapLayout .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+  	-webkit-filter: drop-shadow(-2px 5px 5px #222);
+    filter:         drop-shadow(-2px 5px 5px #222); 
 }
+
+.mdl-layout__header .mdl-layout__header {
+	background-color : rgba(0,0,0,0.75);
+	}
 
 /* ************************************************************************/
 
@@ -107,12 +113,17 @@ body {
 	position: absolute;
 	margin-left: 40%;
 	font-family:'Baron Neue Bold';
+	text-shadow: 2px 2px 1px #c18247; 
 	color: #ec9e57;
+	-webkit-filter: drop-shadow(0px 5px 5px #222);
+    filter:         drop-shadow(0px 5px 5px #222); 
 }
 
 #button_upload, #button_stats, #button_profile {
 	height: 25px;
 	transition: height 0.5s;
+	-webkit-filter: drop-shadow(2px 5px 5px #222);
+    filter:         drop-shadow(2px 5px 5px #222); 
 }
 
 #button_upload:hover, #button_stats:hover, #button_profile:hover {
@@ -121,7 +132,18 @@ body {
 
 
 #stats, #upload, #profile {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.75);
 	height: 100%;
 	width: auto;
+	padding: 5%;
+}
+
+p, h1 {
+	color: rgb(180, 180, 180);
+}
+
+#HEADING {
+	padding-left: 5%;
+	font-size: 6em;
+	text-shadow: 5px 0px 1px #757575; 
 }
