@@ -96,6 +96,21 @@ src: local('Baron Neue Italic'), url('Baron Neue Italic.woff') format('woff');
 	background-color : rgba(0,0,0,0.75);
 	}
 
+.mdl-cell {
+	  box-sizing: border-box;
+	  background-color: rgba(20,20,20,0.9);
+	  height: auto;
+	  padding-left: 8px;
+	  padding-top: 4px;
+	  color: white;
+	  position: relative;
+	  min-width: 450px;
+}
+
+.mdl-grid:first-of-type .mdl-cell {
+  height: auto;
+}
+
 /* ************************************************************************/
 
 
@@ -113,37 +128,84 @@ body {
 	position: absolute;
 	margin-left: 40%;
 	font-family:'Baron Neue Bold';
-	text-shadow: 2px 2px 1px #c18247; 
-	color: #ec9e57;
-	-webkit-filter: drop-shadow(0px 5px 5px #222);
-    filter:         drop-shadow(0px 5px 5px #222); 
+	/*text-shadow: 2px 0px 1px #e9925b; */
+	color: #ff9900;
+	transition: ease 0.2s;
+}
+
+#logo:hover {
+	-webkit-filter: drop-shadow(0px 5px 5px #383735); /* GREY */
+    filter:         drop-shadow(0px 5px 5px #383735); /* GREY */
+}
+
+.aLogo {
+	text-decoration: none;
 }
 
 #button_upload, #button_stats, #button_profile {
 	height: 25px;
-	transition: height 0.5s;
-	-webkit-filter: drop-shadow(2px 5px 5px #222);
-    filter:         drop-shadow(2px 5px 5px #222); 
+	transition: ease 0.5s;
+
 }
 
 #button_upload:hover, #button_stats:hover, #button_profile:hover {
 	height: 30px;
+	-webkit-filter: drop-shadow(2px 5px 5px #383735); /* GREY */
+    filter:         drop-shadow(2px 5px 5px #383735); /* GREY */
 }
 
 
 #stats, #upload, #profile {
-	background-color: rgba(0,0,0,0.75);
+	background-color: rgba(0,0,0,0.75); /* DARK BG */
+	/*background-color: rgba(220,220,220,0.9); */ /* LIGHT BG */
 	height: 100%;
 	width: auto;
 	padding: 5%;
 }
 
 p, h1 {
-	color: rgb(180, 180, 180);
+	color: #f4f9f7; /* WHITE */
+}
+
+.rating {
+	padding-top: 5%;
+	margin-bottom: 0px;
+}
+
+.stars {
+	margin-top: 0px;
+	color: #ff9900; /* ORANGE */
+}
+
+.smlHeading {
+	color: #e16060; /* RED */
+}
+
+.inline {
+	display: inline;
 }
 
 #HEADING {
 	padding-left: 5%;
 	font-size: 6em;
 	text-shadow: 5px 0px 1px #757575; 
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	.mdl-cell {
+		float: left;
+		display: block;
+		position: relative;
+	}
+
+	#logo {
+		position: absolute;
+		margin-left: 20%;
+	}
+
+	.stars {
+		color: red;
+	}
+
 }

@@ -26,20 +26,25 @@
         </header>
 
 
-<!-- Uses a transparent header that draws on top of the layout's background -->
+<!-- Transparent header that draws on top of the layout's background -->
     <div class="mapLayout mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span id="logo" class="mdl-layout-title"><img src="images/logoOrange.png" height = 50px> LOOKING GLASS</span>
+          <span id="logo" class="mdl-layout-title">
+          	<a class="aLogo" href="index.html">
+          		<img src="images/logoOrange.png" height = 50px> LOOKING GLASS
+          	</a>
+          </span>
+          
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
-          <nav class="mdl-navigation">
-          <a class="mdl-navigation__link"> <img id="button_upload" src="images/IcoUploadB.png"></a>
-          <a class="mdl-navigation__link"> <img id="button_stats" src="images/IcoStatsB.png"></a>
-          <a class="mdl-navigation__link"> <img id="button_profile" src="images/IcoProfileB.png"></a>
-          </nav>
+	        <nav class="mdl-navigation">
+		          <a class="mdl-navigation__link"> <img id="button_profile" src="images/IcoProfileB.png"></a>
+		          <a class="mdl-navigation__link"> <img id="button_stats" src="images/IcoStatsB.png"></a>
+		          <a class="mdl-navigation__link"> <img id="button_upload" src="images/IcoUploadB.png"></a>
+          	</nav>
         </div>
       </header>
 
@@ -55,7 +60,25 @@
       <div id="profile">
       	<h1 id="HEADING"> //YOUR PROFILE </h1>
       	<br>
-      	<img src="images/IcoProfileW.png" height = 300px>
+      	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--4-col">
+		  		<img src="images/IcoProfileO.png" height='300px' padding-left='5%'>
+		  		
+		  	</div>
+		  	<div class="mdl-cell mdl-cell--4-col">
+		  		<h2> StaceeeeyWillcox </h2>
+		  		<h4 class="rating"> overall cam rating </h4>
+		  		<h1 class="stars"> &#9733; &#9733; &#9733; &#9733; &#9734;  </h1> 
+		  	</div>
+		  	<div class="mdl-cell mdl-cell--4-col">
+		  		<h4 class="smlHeading"> member since: </h4>
+		  		<h2 class="inline"> 05/2015 </h2>
+		  		<br>
+		  		<h4 class="smlHeading"> member since: </h4>
+		  		<h2 class="inline"> 05/2015 </h2>
+		 	</div>
+		</div>
+      	
 
       </div>
 
@@ -108,9 +131,6 @@
       </main>
     </div>
 
-
-
-		
 	</div>
 		<!-- Javascript link -->
 		<script src="js/script.js"> </script>
