@@ -88,23 +88,31 @@ src: local('Baron Neue Italic'), url('Baron Neue Italic.woff') format('woff');
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
-  	-webkit-filter: drop-shadow(-2px 5px 5px #222);
+  transition: ease 0.2s;
+}
+
+.mdl-layout__drawer-button:hover {
+	  	-webkit-filter: drop-shadow(-2px 5px 5px #222);
     filter:         drop-shadow(-2px 5px 5px #222); 
 }
 
 .mdl-layout__header .mdl-layout__header {
-	background-color : rgba(0,0,0,0.75);
+	background-color : rgba(0,0,0,0.75);   
 	}
 
 .mdl-cell {
 	  box-sizing: border-box;
-	  background-color: rgba(20,20,20,0.9);
+	  background-color: rgba(20,20,20,0.1);
 	  height: auto;
 	  padding-left: 8px;
 	  padding-top: 4px;
 	  color: white;
 	  position: relative;
 	  min-width: 450px;
+}
+
+.cellSmall {
+	max-width: 200px;
 }
 
 .mdl-grid:first-of-type .mdl-cell {
@@ -191,8 +199,15 @@ p, h1 {
 	text-shadow: 5px 0px 1px #757575; 
 }
 
+.noSelect {
+		  -webkit-user-select: none;  /* Chrome all / Safari all */
+	  -moz-user-select: none;     /* Firefox all */
+	  -ms-user-select: none;      /* IE 10+ */
+	  user-select: none;          /* Likely future */ 
+}
 
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
 	.mdl-cell {
 		float: left;
 		display: block;
@@ -206,6 +221,10 @@ p, h1 {
 
 	.stars {
 		color: red;
+	}
+
+	.profilePic {
+		height: 100px;
 	}
 
 }
