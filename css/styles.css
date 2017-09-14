@@ -119,6 +119,19 @@ src: local('Baron Neue Italic'), url('Baron Neue Italic.woff') format('woff');
   height: auto;
 }
 
+.center {
+	text-align: center;
+}
+
+.mdl-button {
+	padding-top: 100px;
+	width: 300px;
+}
+
+.white {
+	color: #f7422d !important;
+}
+
 /* ************************************************************************/
 
 
@@ -171,6 +184,16 @@ body {
 	padding: 5%;
 }
 
+.profilePic {
+	height: 300px;
+	transition: ease 0.2s;
+}
+
+.uploadButton:hover {
+	-webkit-filter: drop-shadow(10px 20px 10px #383735); /* GREY */
+    filter:         drop-shadow(10px 20px 10px #383735); /* GREY */
+}
+
 p, h1 {
 	color: #f4f9f7; /* WHITE */
 }
@@ -186,7 +209,7 @@ p, h1 {
 }
 
 .smlHeading {
-	color: #e16060; /* RED */
+	color: #f7422d; /* RED */
 }
 
 .inline {
@@ -220,11 +243,16 @@ p, h1 {
 	}
 
 	.stars {
-		color: red;
+		font-size: 30px;
 	}
 
 	.profilePic {
 		height: 100px;
+	}
+
+	.name {
+		margin-top: 0px;
+		font-size: 35px;
 	}
 
 }
