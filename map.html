@@ -13,6 +13,9 @@
 	    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-orange.min.css">
 	    <!-- Material Design icon font -->
 	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	    <!-- Import Font Awesome Icons -->
+	    <script src="https://use.fontawesome.com/b21fc2e408.js"></script>
 		
 		
 	</head>
@@ -82,8 +85,7 @@
       	<br>
       	<div class="mdl-grid">
 			<div class="mdl-cell mdl-cell--1-col mdl-cell--3-col-phone">
-		  		<img class='profilePic' src="images/IcoProfileO.png" padding-left='5%'>
-		  		
+		  		<img class='profilePic' src="images/IcoProfileO.png">
 		  	</div>
 		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--3-col-phone">
 		  		<h2 class="name"> StaceeeeyWillcox </h2>
@@ -104,9 +106,6 @@
 		 		</p>
 		 	</div>
 		</div>
-		<br><br>
-		<br><br>
-		<br><br>
 		<!-- BUTTONS -->
       	<div class="mdl-grid center">
 			  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
@@ -130,36 +129,60 @@
       	<br>
       	<div class="mdl-grid center">
 		  <div class="mdl-cell mdl-cell--4-col">
-		  		<img class='profilePic uploadButton' src="images/IcoUploadO.png">
+		  		<img id='uploadButton' class='profilePic uploadButton' src="images/IcoUploadO.png">
+		  		<span for="uploadButton" class="mdl-tooltip mdl-tooltip--large">Select/Allow Cam Stream</span>
 		  </div>
 		  <div class="mdl-cell mdl-cell--6-col">
-		  		<!-- Textfield with Floating Label -->
-				<!-- <form action="#"> -->
-				  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
-				    <label class="mdl-textfield__label white" for="location">Heading
-				    </label>
-				  </div>
-				  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
-				    <label class="mdl-textfield__label white" for="location">Location</label>
-				  </div>
-				  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				    <textarea class="mdl-textfield__input" type="text" rows= "3" id="location" pattern="[A-Z,a-z, ]*"></textarea>
-				    <label class="mdl-textfield__label white" for="location">Bio</label>
-				  </div>
-				  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
-				    <label class="mdl-textfield__label white" for="location">Tags</label>
-				  </div>
-				<!-- </form> -->
-		  </div>
-		  <div class="mdl-cell mdl-cell--2-col">
-		  	
-		  </div>
+		  		<h2> camera stream properties: </h2>
+		  		<div class="mdl-grid">
+		  			<div class="mdl-cell mdl-cell--12-col">
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="cctv">
+						  <input type="radio" id="cctv" class="mdl-radio__button" name="options" value="1" checked>
+						  <span class="mdl-radio__label">CCTV (static)</span>
+						</label>
+						<label id="mobileRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mobile">
+						  <input type="radio" id="mobile" class="mdl-radio__button" name="options" value="2">
+						  <span class="mdl-radio__label">Mobile (roaming)</span>
+						</label>
+						<span for="mobileRadio" class="mdl-tooltip mdl-tooltip--large">Caution: This will use GPS tracking for the map location.</span>
+					</div>
+			  		<!-- Textfield with Floating Label -->
+					<!-- <form action="#"> -->
+					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
+					    <label class="mdl-textfield__label white" for="location">heading
+					    </label>
+					  </div>
+					  <div id='showStatic1' class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="location" pattern="[0-9]*">
+					    <label class="mdl-textfield__label white" for="location">latitude</label>
+					  </div>
+					  <div id='showStatic2' class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="location" pattern="[0-9]*">
+					    <label class="mdl-textfield__label white" for="location">longitude</label>
+					  </div>
+					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <textarea class="mdl-textfield__input" type="text" rows= "3" id="location" pattern="[A-Z,a-z, ]*"></textarea>
+					    <label class="mdl-textfield__label white" for="location">description</label>
+					  </div>
+					  <br>
+					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
+					    <label class="mdl-textfield__label white" for="location">tags</label>
+					  </div>
+					<!-- </form> -->
+		  		</div>
+			</div>
+			
+		<div class="mdl-grid center">
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+				 <!-- Primary-colored raised button with ripple -->
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary shift">
+					UPLOAD
+				</button>
+			</div>
 		</div>
-	      	<!-- Rich Tooltip -->
-
+		</div>
       </div>
 <!-- *************** -->
 
@@ -195,7 +218,7 @@
 		  </p>
 		  <p class="mdl-navigation__link"> CAMERA-VIEW HEATMAP
 			<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-4">
-			    <input type="checkbox" id="switch-4" class="mdl-switch__input">
+			    <input type="checkbox" id="switch-4" class="mdl-switch__input" name="heat">
 			    <span class="mdl-switch__label"></span>
 			</label>
 		  </p> 
@@ -208,6 +231,8 @@
 	</div>
 		<!-- Javascript link -->
 		<script src="js/script.js"> </script>
+		<!-- ScrollReveal link -->
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	</body>
 </html>		
 		

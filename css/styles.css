@@ -119,17 +119,14 @@ src: local('Baron Neue Italic'), url('Baron Neue Italic.woff') format('woff');
   height: auto;
 }
 
-.center {
-	text-align: center;
-}
 
 .mdl-button {
 	padding-top: 100px;
 	width: 300px;
 }
 
-.white {
-	color: #f7422d !important;
+.mdl-radio {
+	padding-right: 20%;
 }
 
 /* ************************************************************************/
@@ -187,11 +184,21 @@ body {
 .profilePic {
 	height: 300px;
 	transition: ease 0.2s;
+	padding-left: 5%;
 }
 
-.uploadButton:hover {
-	-webkit-filter: drop-shadow(10px 20px 10px #383735); /* GREY */
-    filter:         drop-shadow(10px 20px 10px #383735); /* GREY */
+.profilePic:hover {
+	padding-left: 10%;
+}
+
+
+/*.uploadButton:hover {
+	-webkit-filter: drop-shadow(-10px 20px 10px #161616);  BLACK 
+    filter:         drop-shadow(-10px 20px 10px #161616);  BLACK 
+}*/
+
+.uploadButton:active {
+	height: 290px;
 }
 
 p, h1 {
@@ -216,6 +223,19 @@ p, h1 {
 	display: inline;
 }
 
+
+.white {
+	color: #f7422d !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.whiteBG {
+	background-color: rgba(220,220,220, 0.2);
+}
+
 #HEADING {
 	padding-left: 5%;
 	font-size: 6em;
@@ -230,7 +250,7 @@ p, h1 {
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
 	.mdl-cell {
 		float: left;
 		display: block;

@@ -56,17 +56,26 @@ $(document).ready(function(){
 
 
 
-        var $heatmap = false;
+        //CHANGE BACKGROUND-MAP IMAGE
 
-        //don't mind me...
-        $("#switch-4").click(function() { //When Heatmap button pressed, switch on/off depending on $heatmap
-            if ($heatmap == false){
-                $('.demo-layout-transparent').css({ 'background-image' : 'url(images/mapHeat.png)' });
-                $heatmap = true;
-            }
-            else {
-                $('.demo-layout-transparent').css({ 'background-image' : 'url(images/mapGrey.png)' });
-                $heatmap = false;
-            }
-        });
+
 });
+
+// SHOW/HIDE FORM BASED ON RADIO
+//https://stackoverflow.com/questions/2777139/how-to-use-jquery-to-show-hide-divs-based-on-radio-button-selection
+$(document).on( "change", "input[name=options]", function() {
+
+        $("#showStatic1").slideToggle(500);
+        $("#showStatic2").slideToggle(500);
+
+} );
+
+$(document).on( "change", "input[name=heat]", function() {
+
+        if(document.getElementById('switch-4').checked) {
+            $('.mapLayout').css({ 'background-image' : 'url(images/mapHeat.png)' });
+        } else {
+            $('.mapLayout').css({ 'background-image' : 'url(images/mapGrey.png)' });
+        }
+
+} );
