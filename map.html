@@ -22,25 +22,34 @@
 	<body>
 	<div id="wrapper">
 
-        <header>
-                <nav>
-
-        		</nav>
-        </header>
-
-
 <!-- Transparent header that draws on top of the layout's background -->
     <div class="mapLayout mdl-layout mdl-js-layout">
 
     	<!-- MDL Progress Bar with Indeterminate Progress -->
 		<div id="progactive" class="mdl-js-progress	mdl-progress--indeterminate"></div>
-
+	<!-- <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -41.29566342, lng: 174.7754699};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3mTicCQ4X0aM-bSjolHFfzNVNR3DSlus&callback=initMap">
+    </script> -->
 
       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row noSelect">
             <!-- Expandable Textfield -->
 			<form action="#">
-			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+			  <div id="navSearch" class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
 			    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
 			      <i class="material-icons">search</i>
 			    </label>
@@ -52,10 +61,7 @@
 			</form>
           <!-- Title -->
           <span id="logo" class="mdl-layout-title">
-
-
-
-          	<a class="aLogo" href="index.html">
+          	<a class="aLogo" href="index.html" title="Go to Title Page">
           		<img src="images/logoOrange.png" height = 50px> LOOKING GLASS
           	</a>
           </span>
@@ -64,9 +70,9 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
 	        <nav class="mdl-navigation">
-		          <a class="mdl-navigation__link"> <img id="button_profile" src="images/IcoProfileB.png"></a>
-		          <a class="mdl-navigation__link"> <img id="button_stats" src="images/IcoStatsB.png"></a>
-		          <a class="mdl-navigation__link"> <img id="button_upload" src="images/IcoUploadB.png"></a>
+		          <a title="Profile" class="mdl-navigation__link"> <img id="button_profile" src="images/IcoProfileB.png"></a>
+		          <a title="Statistics" class="mdl-navigation__link"> <img id="button_stats" src="images/IcoStatsB.png"></a>
+		          <a title="Upload" class="mdl-navigation__link"> <img id="button_upload" src="images/IcoUploadB.png"></a>
           	</nav>
         </div>
       </header>
@@ -84,25 +90,25 @@
       	<h1 id="HEADING"> //YOUR PROFILE </h1>
       	<br>
       	<div class="mdl-grid">
-			<div class="mdl-cell mdl-cell--1-col mdl-cell--3-col-phone">
+			<div class="mdl-cell mdl-cell--1-col">
 		  		<img class='profilePic' src="images/IcoProfileO.png">
 		  	</div>
-		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--3-col-phone">
+		  	<div class="mdl-cell mdl-cell--1-col">
 		  		<h2 class="name"> StaceeeeyWillcox </h2>
-		  		<h4 class="rating"> overall cam rating </h4>
+		  		<h4 class="rating"> overall cam rating <p> (out of 23 total ratings) </p></h4>
 		  		<h1 class="stars"> &#9733; &#9733; &#9733; &#9733; &#9734;  </h1> 
 		  	</div>
-		  	<div class="mdl-cell mdl-cell--1-col mdl-cell--3-col-phone">
+		  	<div class="mdl-cell mdl-cell--1-col">
 		  		<h4 class="smlHeading"> member since: </h4>
-		  		<h2 class="inline"> 05/2015 </h2>
+		  		<h2 class="inline"> 12/2016 </h2>
 		  		<br>
 		  		<h4 class="smlHeading"> age: </h4>
 		  		<h2 class="inline"> 20 </h2>
 		 	</div>
-		 	<div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-phone">
+		 	<div class="mdl-cell mdl-cell--3-col">
 		 		<h4 class="smlHeading"> bio: </h4>
 		 		<p class="inline"> 
-		 			my name ees stacey blah blah blah I know nothing
+		 			I'm just a university student who wants to try something new. I use this site to scout dodgy zones in the neighborhood before I enter them and check the traffic before driving into work.
 		 		</p>
 		 	</div>
 		</div>
@@ -144,7 +150,9 @@
 						  <input type="radio" id="mobile" class="mdl-radio__button" name="options" value="2">
 						  <span class="mdl-radio__label">Mobile (roaming)</span>
 						</label>
-						<span for="mobileRadio" class="mdl-tooltip mdl-tooltip--large">Caution: This will use GPS tracking for the map location.</span>
+						<span for="mobileRadio" class="mdl-tooltip mdl-tooltip--large">
+							Caution: This will use GPS tracking for your map location.
+						</span>
 					</div>
 			  		<!-- Textfield with Floating Label -->
 					<!-- <form action="#"> -->
@@ -184,6 +192,7 @@
 		</div>
 		</div>
       </div>
+
 <!-- *************** -->
 
 
@@ -224,8 +233,6 @@
 		  </p> 
         </nav>
       </div>
-      <main class="mdl-layout__content">
-      </main>
     </div>
 
 	</div>

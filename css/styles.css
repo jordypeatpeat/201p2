@@ -276,3 +276,16 @@ p, h1 {
 	}
 
 }
+
+
+/* ********************** GOOGLE MAPS **************************** */
+#wrapper {
+	z-index: 1;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}

@@ -42,7 +42,6 @@ $(document).ready(function(){
         $("#button_upload").click(function() { //This checks when the profile button is pressed, if there's a div to close
 
             $("#upload").slideToggle(200);
-
             
 
             if ($("#profile").is(":visible")) {  // i.e. #show is a div that could be visible
@@ -55,8 +54,22 @@ $(document).ready(function(){
         });
 
 
+        // HIDE OVERLAY SECTIONS WHEN USING MAP TOOLS
+        // $('#navDrawer').click(function() { //This checks when the profile button is pressed, if there's a div to close
+            
+        //     if ($("#profile").is(":visible")) {  // i.e. #show is a div that could be visible
+        //         $("#profile").hide();
+        //     }
 
-        //CHANGE BACKGROUND-MAP IMAGE
+        //     if ($("#stats").is(":visible")) {
+        //         $("#stats").hide();
+        //     }
+
+        //     if ($("#upload").is(":visible")) {
+        //         $("#upload").hide();
+        //     }
+
+        // });
 
 
 });
@@ -70,6 +83,7 @@ $(document).on( "change", "input[name=options]", function() {
 
 } );
 
+//CHANGE BACKGROUND-MAP IMAGE
 $(document).on( "change", "input[name=heat]", function() {
 
         if(document.getElementById('switch-4').checked) {
