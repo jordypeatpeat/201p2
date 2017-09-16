@@ -100,18 +100,12 @@ html {
 
 /**************** Material Design Lite https://getmdl.io *******************/
 
-.mapLayout {
-	/*background-image: url(../images/mapGrey.png);*/
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.mapLayout .mdl-layout__drawer-button {
+.mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
   transition: ease 0.2s;
+  background-color: transparent;
 }
 
 .mdl-layout__drawer-button:hover {
@@ -124,6 +118,15 @@ html {
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0)) !important;
 }
 
+.settings-header {
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)) !important;
+	/*background-color: white;*/
+}
+
+.settings-bg {
+	background-color: rgba(0,0,0,0.01) !important;
+}
+
 .mdl-cell {
 	  box-sizing: border-box;
 	  background-color: rgba(20,20,20,0.05);
@@ -133,6 +136,10 @@ html {
 	  color: white;
 	  position: relative;
 	  min-width: 450px;
+}
+
+.noBG {
+	background-color: rgba(20,20,20,0.0);
 }
 
 .cellSmall {
@@ -154,8 +161,18 @@ html {
 }
 
 
+.left {
+	float: left !important;
+}
 
+.padded {
+	margin-top: 50%;
+}
 
+#exitP2 {
+	float: right;
+	color: white;
+}
 
 /* __CARD__ */
 
@@ -183,6 +200,13 @@ html {
 }
 
 
+/* __TABLE__ */
+
+.mdl-data-table {
+	color: grey;
+}
+
+
 
 /* ************************************************************************/
 
@@ -204,6 +228,10 @@ body {
 	/*text-shadow: 2px 0px 1px #e9925b; */
 	color: #ff9900;
 	transition: ease 0.2s;
+}
+
+.logoS {
+	color: white !important;
 }
 
 #logo:hover {
@@ -248,10 +276,10 @@ body {
 }
 
 
-/*.uploadButton:hover {
-	-webkit-filter: drop-shadow(-10px 20px 10px #161616);  BLACK 
-    filter:         drop-shadow(-10px 20px 10px #161616);  BLACK 
-}*/
+.ppUpButton:hover {
+	-webkit-filter: drop-shadow(-10px 20px 10px #e5e5e5);  BLACK 
+    filter:         drop-shadow(-10px 20px 10px #e5e5e5);  BLACK 
+}
 
 .uploadButton:active {
 	height: 290px;
@@ -317,7 +345,6 @@ p, h1 {
 .ratings {
 	width:  100px !important;
 }
-
 
 #HEADING {
 	padding-left: 5%;

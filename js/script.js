@@ -71,7 +71,9 @@ $(document).ready(function(){
             $("#stats").slideToggle(200);
         });
 
-
+        $("#exitP2").click(function() { //This checks when the profile stats button is pressed, if there's a div to close
+            $("#profile2").slideToggle(200);
+        });
 
 
         $("#button_upload").click(function() { //This checks when the profile button is pressed, if there's a div to close
@@ -163,7 +165,7 @@ $('#button_upload').click(function(){
         }
 });
 
-$('#gotoPro').click(function(){
+$('#gotoPro, #exitP2').click(function(){
         if ($("#profile2").is(":visible")) {          
             // replace css with '!important' and timer of 200 millis
             setTimeout(function(){
@@ -178,3 +180,5 @@ $('#gotoPro').click(function(){
             });           
         }
 });
+
+
