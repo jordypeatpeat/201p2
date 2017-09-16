@@ -119,9 +119,10 @@ html {
     filter:         drop-shadow(-2px 5px 5px #000); /*BLACK*/
 }
 
-.mdl-layout__header .mdl-layout__header {
-	background-color : rgba(0,0,0,0.75);   
-	}
+.mdl-layout__header {
+	/*background-color: rgba(0,0,0,0.45) !important; */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.55), rgba(0,0,0,0)) !important;
+}
 
 .mdl-cell {
 	  box-sizing: border-box;
@@ -152,9 +153,7 @@ html {
 	padding-right: 20%;
 }
 
-.mdl-layout__header {
-	background-color: rgba(0,0,0,0.75) !important;
-}
+
 
 
 
@@ -179,7 +178,7 @@ html {
 }
 
 .cardGrid {
-	margin-left: 20%;
+	margin-left: 18%;
 	margin-top: 5%;
 }
 
@@ -229,7 +228,7 @@ body {
 }
 
 
-#stats, #upload, #profile {
+#stats, #upload, #profile, #profile2 {
 	background-color: rgba(0,0,0,0.75); /* DARK BG */
 	/*background-color: rgba(220,220,220,0.9); */ /* LIGHT BG */
 	height: 100%;
@@ -274,7 +273,7 @@ p, h1 {
 }
 
 .starsMed {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .hearts {
@@ -374,6 +373,10 @@ p, h1 {
 
 	.stars {
 		font-size: 30px;
+	}
+
+	.starsMed {
+		font-size: 20px;
 	}
 
 	.profilePic {

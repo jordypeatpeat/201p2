@@ -34,12 +34,6 @@
 		<div id="progactive" class="mdl-js-progress	mdl-progress--indeterminate"></div>
 	
 
-
-
-
-
-
-
       <header class="mdl-layout__header mdl-layout__header--seamed">
         <div class="mdl-layout__header-row noSelect">
             <!-- Expandable Textfield -->
@@ -57,7 +51,7 @@
           <!-- Title -->
           <span id="logo" class="mdl-layout-title">
           	<a class="aLogo" href="index.html" title="Go to Title Page">
-          		<img src="images/logoOrange.png" height = 50px> LOOKING GLASS
+          		<img src="images/logoOrange.png" height = '50px'> LOOKING GLASS
           	</a>
           </span>
           
@@ -89,7 +83,7 @@
 			    <form class="leftSpacing inline">
 				  <div class="mdl-textfield ratings mdl-js-textfield mdl-textfield--floating-label">
 				    <input class="mdl-textfield__input" type="text" pattern="[1-5]" max="5" min="1" id="rating">
-				    <label class="mdl-textfield__label" for="rating">Rating...</label>
+				    <label class="mdl-textfield__label" for="rating">rating...</label>
 				    <span class="mdl-textfield__error">Input is not a number!</span>
 				  </div>
 				</form>
@@ -150,7 +144,11 @@
 		  		<h4 class="smlHeading"> age: </h4>
 		  		<h2 class="inline"> 20 </h2>
 		 	</div>
-		 	<div class="mdl-cell mdl-cell--3-col">
+		 	<div class="mdl-cell mdl-cell--1-col">
+		 		<h4 class="smlHeading"> type: </h4>
+		  		<h2 class="inline"> Casual Streamer </h2>
+		  	</div>
+		  	<div class="mdl-cell mdl-cell--3-col">
 		 		<h4 class="smlHeading"> bio: </h4>
 		 		<p class="inline"> 
 		 			I'm just a university student who wants to try something new. I use this site to scout dodgy zones in the neighborhood before I enter them and check the traffic before driving into work.
@@ -174,10 +172,49 @@
       </div>
 
 
+
+
       <div id="stats" class="overlay">
       	<h1 id="HEADING"> // STATISTICS </h1>
       	<br>
       </div>
+
+
+
+      <div id="profile2" class="overlay">
+      	<h1 id="HEADING"> // STREAMER PROFILE </h1>
+      	<br>
+      	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--1-col">
+		  		<img class='profilePic' src="images/IcoProfileO.png">
+		  	</div>
+		  	<div class="mdl-cell mdl-cell--1-col">
+		  		<h2 class="name"> WCC CCTV </h2>
+		  		<h4 class="rating"> overall cam rating <p> (out of 182 total ratings) </p></h4>
+		  		<h1 class="stars"> &#9733; &#9733; &#9733; &#9733; &#9733;  </h1> 
+		  	</div>
+		  	<div class="mdl-cell mdl-cell--1-col">
+		  		<h4 class="smlHeading"> member since: </h4>
+		  		<h2 class="inline"> 6/2016 </h2>
+		  		<br>
+		  		<h4 class="smlHeading"> age: </h4>
+		  		<h2 class="inline"> 20 </h2>
+		 	</div>
+		 	<div class="mdl-cell mdl-cell--1-col">
+		 		<h4 class="smlHeading"> type: </h4>
+		  		<h2 class="inline"> Hosting Company </h2>
+		  	</div>
+		 	<div class="mdl-cell mdl-cell--3-col">
+		 		<h4 class="smlHeading"> bio: </h4>
+		 		<p class="inline"> 
+		 			The official Wellington City Council account for Looking Glass. Hosts CCTV streams throughout Wellington CBD for traffic reports, crime capture and weather coverage.
+		 		</p>
+		 	</div>
+		</div>
+		</div>
+
+
+
 
 
       <div id="upload" class="overlay">
@@ -242,6 +279,12 @@
 		</div>
 		</div>
       </div>
+
+
+
+
+
+
 
 <!-- *************** -->
 
@@ -313,7 +356,7 @@
         
 	        if ($("#markerSide").is(":hidden")) {
 	        	console.log(showSide);
-	        	$("#markerSide").show();
+	        	$("#markerSide").slideToggle(200);
 	        	showSide = false;
 	        }
 	    });
