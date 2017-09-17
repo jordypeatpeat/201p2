@@ -332,7 +332,7 @@ p, h1 {
 	color: grey !important;
 }
 
-.warning:hover, .is-active {
+.warning:hover, .mdl-tabs__tab > .is-active {
 	color: red !important;
 }
 
