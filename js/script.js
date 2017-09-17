@@ -119,6 +119,18 @@ $(document).ready(function(){
             $("#stream").slideToggle(200);
         });
 
+        $("#exitStats").click(function() { //This checks when the profile stats button is pressed, if there's a div to close
+            $("#stats").slideToggle(200);
+        });
+
+        $("#exitProfile").click(function() { //This checks when the profile stats button is pressed, if there's a div to close
+            $("#profile").slideToggle(200);
+        });
+
+        $("#exitUpload").click(function() { //This checks when the profile stats button is pressed, if there's a div to close
+            $("#upload").slideToggle(200);
+        });
+
         $("#button_upload").click(function() { //This checks when the profile button is pressed, if there's a div to close
 
             $("#upload").slideToggle(200);

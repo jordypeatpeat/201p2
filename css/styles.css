@@ -170,7 +170,7 @@ html {
 	margin-top: 50%;
 }
 
-#exitP2, #exitS {
+#exitP2, #exitS, #exitProfile, #exitStats, #exitUpload {
 	float: right;
 	color: white;
 }
