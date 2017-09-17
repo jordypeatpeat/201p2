@@ -170,7 +170,7 @@ html {
 	margin-top: 50%;
 }
 
-#exitP2 {
+#exitP2, #exitS {
 	float: right;
 	color: white;
 }
@@ -217,6 +217,7 @@ body {
 	font-family:'Baron Neue Black';
 	font-weight:normal;
 	font-size:42px;
+	background-color: #414141;
 
 }
 
@@ -257,7 +258,7 @@ body {
 }
 
 
-#stats, #upload, #profile, #profile2 {
+#stats, #upload, #profile, #profile2, #stream {
 	background-color: rgba(0,0,0,0.75); /* DARK BG */
 	/*background-color: rgba(220,220,220,0.9); */ /* LIGHT BG */
 	height: 100%;
@@ -278,8 +279,8 @@ body {
 
 
 .ppUpButton:hover {
-	-webkit-filter: drop-shadow(-10px 20px 10px #e5e5e5);  BLACK 
-    filter:         drop-shadow(-10px 20px 10px #e5e5e5);  BLACK 
+	-webkit-filter: drop-shadow(-10px 20px 10px black);  
+    filter:         drop-shadow(-10px 20px 10px black); 
 }
 
 .uploadButton:active {
@@ -313,10 +314,6 @@ p, h1 {
 	float: right;
 }
 
-.warning {
-	color: grey;
-}
-
 .username {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -334,6 +331,11 @@ p, h1 {
 .grey {
 	color: grey !important;
 }
+
+.white {
+	color: white !important;
+}
+
 
 .center {
 	text-align: center;
@@ -370,7 +372,7 @@ p, h1 {
     filter:         drop-shadow(2px 5px 5px #383735); /* GREY */
 }
 
-#gotoPro {
+#gotoPro, #gotoPro2 {
 	padding: 0;
 	margin: 0;
 	padding-top: 10px;
@@ -379,7 +381,7 @@ p, h1 {
 	transition: ease 0.2s;
 }
 
-#gotoPro:hover {
+#gotoPro:hover, #gotoPro2:hover {
 	padding-left: 10px;
 }
 
@@ -538,6 +540,29 @@ p, h1 {
 footer {
 	z-index: 2;
 }
+
+
+
+
+
+
+
+/* ******************* STREAM *********************/
+
+.vid {
+	height: auto;
+	width: auto;
+
+}
+
+video {
+	width: 100%;	
+}
+
+
+
+
+
 
 
 

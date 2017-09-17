@@ -101,11 +101,11 @@
 			    </p>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+			    <a id="streamButton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
 			      WATCH STREAM
 			    </a>
 			    <button title="Report this stream" class="right mdl-button report mdl-js-button mdl-js-ripple-effect">
-	    			<i class="material-icons warning">warning</i>
+	    			<i class="material-icons grey">warning</i>
 	    		</button>
 			  </div>
 			  <div class="mdl-card__menu">
@@ -185,14 +185,6 @@
 
 
 
-
-      <div id="stats" class="overlay">
-      	<h1 id="HEADING"> // STATISTICS </h1>
-      	<br>
-      </div>
-
-
-
       <div id="profile2" class="overlay">
       	<h1 id="HEADING"> // USER PROFILE
       	<button id="exitP2" class="mdl-button mdl-js-button mdl-js-ripple-effect">
@@ -228,10 +220,15 @@
 		 		</p>
 		 	</div>
 		</div>
-
 	  </div>
 
 
+
+
+      <div id="stats" class="overlay">
+      	<h1 id="HEADING"> // STATISTICS </h1>
+      	<br>
+      </div>
 
 
 
@@ -313,6 +310,56 @@
 
 
 
+
+      <div id="stream" class="overlay">
+      	<h2 class="white"> 
+			<button id="gotoPro2" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+				<img class='profilePic mini' src="images/IcoProfileO.png">
+				</button>   
+	      		// VIVIAN TRAFFIC (WCC) 	
+		      	<button id="exitS" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+				<i class="material-icons">clear</i> 
+			</button>       	
+      	</h2>
+      		<span for="gotoPro2" class="mdl-tooltip mdl-tooltip--large">
+			<p class="username"> WCC CCTV </p>
+			<p class="stars"> &#9733; &#9733; &#9733; &#9733; &#9733;  </p> 
+			</span>
+      	<br>
+      	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--8-col">
+			<div class='vid'>
+			<!-- VIDEO FROM http://www.sample-videos.com/ -->
+				<video controls>
+				  <source src="images/SampleVideo_1280x720.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			</div>
+			<div class="mdl-cell mdl-cell--1-col">
+		  		<h4 class="smlHeading"> description: </h4>
+		  		<p class="white"> Motorway exit onto Vivian traffic cam, hosted by Wellington City Council  </p>
+		  		<br>
+		  		<i>User Rating:</i> <p class="stars starsMed inline noSelect"> &#9733; &#9733; &#9733; &#9733; &#9733;  </p>
+			    <br>
+			    <form>
+				  <div class="mdl-textfield ratings mdl-js-textfield mdl-textfield--floating-label">
+				    <input class="mdl-textfield__input" type="text" pattern="[1-5]" max="5" min="1" id="rating">
+				    <label class="mdl-textfield__label red" for="rating">rating...</label>
+				    <span class="mdl-textfield__error">Input is not a number!</span>
+				  </div>
+				</form>
+				<br>
+				<i> Connection: </i> <p class="hearts starsMed inline noSelect"> 
+			    	<i class="material-icons">favorite</i>  
+			    	<i class="material-icons">favorite</i>  
+			    	<i class="material-icons">favorite</i>  
+			    	<i class="material-icons">favorite</i>  
+			    	<i class="material-icons">favorite border</i>  
+			    </p>
+			</div>
+		</div>
+	  </div>
 
 
 

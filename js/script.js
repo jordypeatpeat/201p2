@@ -3,17 +3,17 @@ $(document).ready(function(){
 
         // SCROLL REVEAL
         window.sr = ScrollReveal({ reset: true });
-        sr.reveal('.revealA, .revealB, .revealC, .revealD, .revealE', { origin: 'left',  duration: 1200  });
-        sr.reveal('#revealA_1, #revealB_1, #revealC_1, #revealD_1, #revealD_2, #revealE_1', { origin: 'right',  duration: 1000  });
+        sr.reveal('.revealA, .revealB, .revealC, .revealD, .revealE', { origin: 'left',  duration: 1200, scale: 0.8});
+        sr.reveal('#revealA_1, #revealB_1, #revealC_1, #revealD_1, #revealD_2, #revealE_1', { origin: 'right',  duration: 1000 });
 
         // SLIDE SHOW/HIDE
         $("#profile").hide(); // This hides said divs on site loading.
         $("#stats").hide();
         $("#upload").hide();
         $("#profile2").hide();
+        $("#stream").hide();
 
-
-        $("#gotoPro").click(function() {
+        $("#gotoPro, #gotoPro2").click(function() {
             $("#profile2").slideToggle(200);
             $("#markerSide").hide();
 
@@ -28,8 +28,35 @@ $(document).ready(function(){
             
             if ($("#profile").is(":visible")) {  // i.e. #show is a div that could be visible
                 $("#profile").slideToggle("slow");
-            }      
+            }
+
+            if ($("#stream").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#stream").hide();
+            }  
         });
+
+        $("#streamButton").click(function() {
+            $("#stream").slideToggle(200);
+            $("#markerSide").hide();
+
+
+            if ($("#stats").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#stats").slideToggle("slow");
+            }
+
+            if ($("#upload").is(":visible")) {
+                $("#upload").slideToggle("slow");
+            }
+            
+            if ($("#profile").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#profile").slideToggle("slow");
+            }   
+
+            if ($("#profile2").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#profile2").slideToggle("slow");
+            }  
+        });
+
 
         $("#button_profile").click(function() { //This checks when the profile button is pressed, if there's a div to close
 
@@ -47,7 +74,11 @@ $(document).ready(function(){
 
             if ($("#profile2").is(":visible")) {  // i.e. #show is a div that could be visible
                 $("#profile2").slideToggle("slow");
-            }                 
+            }
+
+            if ($("#stream").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#stream").slideToggle("slow");
+            }                   
         });
 
         $("#button_stats").click(function() { //This checks when the profile button is pressed, if there's a div to close
@@ -66,7 +97,11 @@ $(document).ready(function(){
 
             if ($("#profile2").is(":visible")) {  // i.e. #show is a div that could be visible
                 $("#profile2").slideToggle("slow");
-            }            
+            }
+
+            if ($("#stream").is(":visible")) {  // i.e. #show is a div that could be visible
+                $("#stream").slideToggle("slow");
+            }              
         });
 
 
@@ -80,6 +115,9 @@ $(document).ready(function(){
             $("#profile2").slideToggle(200);
         });
 
+        $("#exitS").click(function() { //This checks when the profile stats button is pressed, if there's a div to close
+            $("#stream").slideToggle(200);
+        });
 
         $("#button_upload").click(function() { //This checks when the profile button is pressed, if there's a div to close
 
@@ -172,6 +210,22 @@ $('#button_upload').click(function(){
 
 $('#gotoPro, #exitP2').click(function(){
         if ($("#profile2").is(":visible")) {          
+            // replace css with '!important' and timer of 200 millis
+            setTimeout(function(){
+                $( '.mdl-layout__header' ).each(function () {
+                        this.style.setProperty( 'background-color', 'rgba(0,0,0,0)', 'important' );
+                });
+            }, 200);
+        }
+        else {
+            $( '.mdl-layout__header' ).each(function () {
+                this.style.setProperty( 'background-color', 'rgba(0,0,0,0.75)', 'important' );
+            });           
+        }
+});
+
+$('#streamButton, #exitS').click(function(){
+        if ($("#stream").is(":visible")) {          
             // replace css with '!important' and timer of 200 millis
             setTimeout(function(){
                 $( '.mdl-layout__header' ).each(function () {
