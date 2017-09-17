@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 	<head>
-		<title> Settings | Looking Glass </title>
+		<title> Sign In | Looking Glass </title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         
@@ -21,7 +21,7 @@
 	</head>
 	<body>
 	<div id="wrapper">
-
+	
 
 
 
@@ -36,7 +36,7 @@
 
       <header class="mdl-layout__header mdl-layout__header--seamed signinBG">
         <div class="mdl-layout__header-row noSelect">
-        				<span class="mdl-layout-title grey"> // account settings </span>
+        				<span class="mdl-layout-title grey"> // sign in / register </span>
           <!-- Title -->
           <span id="logo" class="mdl-layout-title logoS">
           	<a class="aLogo logoS" href="index.html" title="Go to Title Page">
@@ -48,11 +48,6 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
 	        <nav class="mdl-navigation">
-		          <a href="map.html" class="mdl-navigation__link"> 
-		          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-				  	BACK TO MAP
-				  </button>
-				  </a>
           	</nav>
         </div>
       </header>
@@ -65,13 +60,41 @@
 
 		<div class="mdl-grid">
 
-			<div class="mdl-cell mdl-cell--1-col noBG">
-				<img id='profilePic' class='profilePic ppUpButton uploadButton' src="images/IcoProfileO.png">
-			</div>
-			<span for="profilePic" class="mdl-tooltip  mdl-tooltip--right">
-				<i class="material-icons">create</i> 
-			</span>
-		
+			<div class="mdl-cell mdl-cell--4-col noBG">
+				<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+				  <tbody>
+				  	<thead>
+				  		<th>
+				  		</th>
+				  		<th>
+				  			<a href="map.html">
+				  			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">
+						  		 <b> Sign In </b>
+						    </button>
+						   </a>
+				  		</th>
+				  	</thead>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">Username</td>
+				      <td>
+				      	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						    <input class="mdl-textfield__input" type="text" id="username">
+						    <label class="mdl-textfield__label" for="username"> Username... </label>
+						  </div>
+				      </td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">Password</td>
+				      <td>
+				      	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						    <input class="mdl-textfield__input" type="password" id="password">
+						    <label class="mdl-textfield__label" for="password"> *********** </label>
+						  </div>
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>		
 
 		
 			<div class="mdl-cell mdl-cell--4-col noBG">
@@ -81,9 +104,11 @@
 				  		<th>
 				  		</th>
 				  		<th>
+				  			<a href="map.html">
 				  			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">
-						  	 <b> Done </b>
-						   </button>
+						  		 <b> Register </b>
+						    </button>
+						   </a>
 				  		</th>
 				  	</thead>
 				    <tr>
@@ -158,7 +183,7 @@
 		</div>
 
 
-
+		</div>
 	</div>
 		<!-- Javascript link -->
 		<script src="js/script.js"> </script>

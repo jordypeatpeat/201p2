@@ -139,6 +139,7 @@ html {
 }
 
 .noBG {
+	background: transparent;
 	background-color: rgba(20,20,20,0.0);
 }
 
@@ -213,11 +214,9 @@ html {
 
 
 body {
-	/*background: url('https://getmdl.io/assets/demos/transparent.jpg') center / cover;*/
-	/*background-color: #383735;*/
 	font-family:'Baron Neue Black';
 	font-weight:normal;
-	font-size:42px
+	font-size:42px;
 
 }
 
@@ -240,7 +239,9 @@ body {
 }
 
 .aLogo {
+	font-family:'Baron Neue Bold';
 	text-decoration: none;
+	color: white;
 }
 
 #button_upload, #button_stats, #button_profile {
@@ -330,8 +331,8 @@ p, h1 {
 }
 
 
-.white {
-	color: #f7422d !important;
+.grey {
+	color: grey !important;
 }
 
 .center {
@@ -441,4 +442,110 @@ p, h1 {
     width: 100%;
     position: absolute;
     z-index: 1;
+}
+
+/****************************************************************/
+
+
+
+
+
+
+/**************************** INDEX *****************************/
+
+.titleHeader {
+	position: fixed !important;
+}
+
+
+#titlePage, #aboutPage, #howPage, #termsPage {
+	background-color: #414141; /*GREY*/
+}
+
+#titlePage {
+	height: 100%;
+	width: 100%;
+}
+
+#titleCenter {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.titleText {
+	font-family:'Baron Neue Black';
+	font-weight:normal;
+	font-size: 5em;
+	color: #f8b26b;
+
+}
+
+.signinBG {
+	background-color: #414141 !important;
+}
+
+.bottomSpacer {
+	margin-bottom: 5%
+}
+
+.revealA, .revealB, .revealC, .revealD, .revealE {
+	padding: 20%;
+	padding-left: 5%;
+	padding-right: 35%;
+	background-image: url('../images/worldMap.png');
+	background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.revealB {
+	padding-left: 65%;
+	padding-right: 0%;
+	background-image: url('../images/mapGrey.png');
+}
+
+.revealC {
+	background-image: url('../images/heatmap.png');
+	padding-left: 32%;
+}
+
+.revealD {
+	background-image: url('../images/abstract.png');
+	padding-left: 10%;
+	padding-top: 20%;
+}
+
+.revealE {
+	background-image: url('../images/logoRed_t.png');
+	padding-left: 32%;
+}
+
+.revealCard {
+	padding-left: 20px;
+	padding-right: 20px;
+	background: transparent;
+	color: grey;
+}
+
+.red {
+	color: #f7422d !important;
+}
+
+.tc {
+	margin-left: 50px;
+}
+
+footer {
+	z-index: 2;
+}
+
+
+
+/* ******************* COVER *********************/
+#cover {
+	height: 100%;
+	width: 100%;
+	background-color: #414141;
+	position: absolute;
+	z-index: 5;
 }

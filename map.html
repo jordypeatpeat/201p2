@@ -21,7 +21,14 @@
 	</head>
 	<body>
 	<div id="wrapper">
-
+	<div id="cover">
+      	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col center noBG">
+				<!-- MDL Spinner Component -->
+				<div class="mdl-spinner mdl-js-spinner is-active"></div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -30,8 +37,7 @@
 <!-- Transparent header that draws on top of the layout's background -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-    	<!-- MDL Progress Bar with Indeterminate Progress -->
-		<div id="progactive" class="mdl-js-progress	mdl-progress--indeterminate"></div>
+
 	
 
       <header class="mdl-layout__header mdl-layout__header--seamed">
@@ -51,7 +57,7 @@
           <!-- Title -->
           <span id="logo" class="mdl-layout-title">
           	<a class="aLogo" href="index.html" title="Go to Title Page">
-          		<img src="images/logoOrange.png" height = '50px'> LOOKING GLASS
+          		<img src="images/logoWhite.png" height = '50px'> LOOKING GLASS
           	</a>
           </span>
           
@@ -155,18 +161,24 @@
 		</div>
 		<!-- BUTTONS -->
       	<div class="mdl-grid center">
-			  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
-			  	<!-- Primary-colored raised button with ripple -->
+			  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
 			  	<a href="settings.html">
 				<button class="mdl-button overlayButton mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
 				  	SETTINGS
 				</button>
 				</a>
 			  </div>
-			  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+			  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
 				<button id="pbutton_stats" class="mdl-button overlayButton mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
 				  	YOUR STATS
 				</button>
+			  </div>
+			  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+			  	<a href="signin.html">
+				<button class="mdl-button overlayButton mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+				  	LOGOUT
+				</button>
+				</a>
 			  </div>
 		 </div>
       </div>
@@ -247,29 +259,42 @@
 							Caution: This will use GPS tracking for your map location.
 						</span>
 					</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="public">
+						  <input type="radio" id="public" class="mdl-radio__button" name="share" value="1" checked>
+						  <span class="mdl-radio__label">Public</span>
+						</label>
+						<label id="privateRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="private">
+						  <input type="radio" id="private" class="mdl-radio__button" name="share" value="2">
+						  <span class="mdl-radio__label">Private</span>
+						</label>
+						<span for="privateRadio" class="mdl-tooltip mdl-tooltip--large">
+							Only those with a link can view your stream.
+						</span>
+					</div>
 			  		<!-- Textfield with Floating Label -->
 					<!-- <form action="#"> -->
 					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
-					    <label class="mdl-textfield__label white" for="location">heading
+					    <label class="mdl-textfield__label red" for="location">heading
 					    </label>
 					  </div>
 					  <div id='showStatic1' class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					    <input class="mdl-textfield__input" type="text" id="location" pattern="[0-9]*">
-					    <label class="mdl-textfield__label white" for="location">latitude</label>
+					    <label class="mdl-textfield__label red" for="location">latitude</label>
 					  </div>
 					  <div id='showStatic2' class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					    <input class="mdl-textfield__input" type="text" id="location" pattern="[0-9]*">
-					    <label class="mdl-textfield__label white" for="location">longitude</label>
+					    <label class="mdl-textfield__label red" for="location">longitude</label>
 					  </div>
 					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					    <textarea class="mdl-textfield__input" type="text" rows= "3" id="location" pattern="[A-Z,a-z, ]*"></textarea>
-					    <label class="mdl-textfield__label white" for="location">description</label>
+					    <label class="mdl-textfield__label red" for="location">description</label>
 					  </div>
 					  <br>
 					  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					    <input class="mdl-textfield__input" type="text" id="location" pattern="[A-Z,a-z, ]*">
-					    <label class="mdl-textfield__label white" for="location">tags</label>
+					    <label class="mdl-textfield__label red" for="location">tags</label>
 					  </div>
 					<!-- </form> -->
 		  		</div>
@@ -386,8 +411,9 @@
     <span for="marker" class="mdl-tooltip mdl-tooltip--large">Select/Allow Cam Stream</span>
 
 	</div>
-		<!-- Javascript link -->
+		<!-- Javascript links -->
 		<script src="js/script.js"> </script>
+		<script src="js/loading.js"> </script>
 		<!-- ScrollReveal link -->
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	</body>
