@@ -102,10 +102,10 @@
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
 			    <a id="streamButton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      WATCH STREAM
+			      <b> WATCH STREAM </b>
 			    </a>
-			    <button title="Report this stream" class="right mdl-button report mdl-js-button mdl-js-ripple-effect">
-	    			<i class="material-icons grey">warning</i>
+			    <button title="Report this stream" class="right mdl-button report mdl-js-button mdl-js-ripple-effect warning">
+	    			<i class="material-icons">warning</i>
 	    		</button>
 			  </div>
 			  <div class="mdl-card__menu">
@@ -228,6 +228,234 @@
       <div id="stats" class="overlay">
       	<h1 id="HEADING"> // STATISTICS </h1>
       	<br>
+      	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col">
+				<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect grey">
+				  <div class="mdl-tabs__tab-bar">
+				      <a href="#personal-panel" class="mdl-tabs__tab is-active white">PERSONAL</a>
+				      <a href="#regional-panel" class="mdl-tabs__tab white">REGIONAL</a>
+				      <a href="#global-panel" class="mdl-tabs__tab white">GLOBAL</a>
+				  </div>
+
+				  <div class="mdl-tabs__panel is-active" id="personal-panel">
+				  	<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--8-col">
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-sort" class="mdl-button mdl-js-button mdl-button--primary">
+								     Sort by:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-sort">
+									 <li class="mdl-menu__item">Top</li>
+									 <li class="mdl-menu__item">Lowest</li>
+									 <li class="mdl-menu__item">Popular</li>
+								  </ul>
+								</div>
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-show" class="mdl-button mdl-js-button mdl-button--primary">
+								     Show:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-show">
+									 <li class="mdl-menu__item">
+									 	Cameras
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+											<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Users
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+											<input type="checkbox" id="switch-2" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Website
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+											<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+								  </ul>
+								 </div>
+							</div>
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col leftSpacing">
+									<h4 class="smlHeading"> top camera (rating): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> top camera (views): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> AVG rating: </h4>
+		  							<h2 class="stars inline"> &#9733; &#9733; &#9733; &#9733; &#9734; </h2>
+		  							<br>
+		  							<h4 class="smlHeading"> AVG connection: </h4>
+		  							<h2 class="hearts starsMed inline noSelect"> 
+		  								<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite border</i>  	  
+								    </h2>									  							
+		  						</div>
+		  					</div>
+						</div>				  	
+						<div class="mdl-cell mdl-cell--2-col">
+							<h4 class="smlHeading">types of camera</h4>
+							<img src="images/randomGraph1.png">
+							<h4 class="smlHeading">camera up-times</h4>
+							<img src="images/randomGraph2.png">
+						</div>
+					</div>
+				  </div>
+				  <div class="mdl-tabs__panel" id="regional-panel">
+				  	<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--8-col">
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-sort2" class="mdl-button mdl-js-button mdl-button--primary">
+								     Sort by:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-sort2">
+									 <li class="mdl-menu__item">Top</li>
+									 <li class="mdl-menu__item">Lowest</li>
+									 <li class="mdl-menu__item">Popular</li>
+								  </ul>
+								</div>
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-show2" class="mdl-button mdl-js-button mdl-button--primary">
+								     Show:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-show2">
+									 <li class="mdl-menu__item">
+									 	Cameras
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+											<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Users
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+											<input type="checkbox" id="switch-2" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Website
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+											<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+								  </ul>
+								 </div>
+							</div>
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col leftSpacing">
+									<h4 class="smlHeading"> top camera (rating): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> top camera (views): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> AVG rating: </h4>
+		  							<h2 class="stars inline"> &#9733; &#9733; &#9733; &#9733; &#9734; </h2>
+		  							<br>
+		  							<h4 class="smlHeading"> AVG connection: </h4>
+		  							<h2 class="hearts starsMed inline noSelect"> 
+		  								<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  	  
+								    </h2>									  							
+		  						</div>
+		  					</div>
+						</div>				  	
+						<div class="mdl-cell mdl-cell--2-col">
+							<h4 class="smlHeading">types of camera</h4>
+							<img src="images/randomGraph3.png">
+							<h4 class="smlHeading">camera up-times</h4>
+							<img src="images/randomGraph2.png">
+						</div>
+					</div>
+				  </div>
+				  <div class="mdl-tabs__panel" id="global-panel">
+				  	<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--8-col">
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-sort3" class="mdl-button mdl-js-button mdl-button--primary">
+								     Sort by:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-sort3">
+									 <li class="mdl-menu__item">Top</li>
+									 <li class="mdl-menu__item">Lowest</li>
+									 <li class="mdl-menu__item">Popular</li>
+								  </ul>
+								</div>
+								<div class="mdl-cell mdl-cell--6-col">
+								  <button id="menu-show3" class="mdl-button mdl-js-button mdl-button--primary">
+								     Show:
+								  </button>
+								  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="menu-show3">
+									 <li class="mdl-menu__item">
+									 	Cameras
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+											<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Users
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+											<input type="checkbox" id="switch-2" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+									 <li class="mdl-menu__item">
+							 			Website
+										 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+											<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+											<span class="mdl-switch__label"></span>
+										</label>
+									 </li>
+								  </ul>
+								 </div>
+							</div>
+							<div class="mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col leftSpacing">
+									<h4 class="smlHeading"> top camera (rating): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> top camera (views): </h4>
+		  							<h2 class="inline"> Vivian Traffic (WCC) </h2>
+		  							<br>
+									<h4 class="smlHeading"> AVG rating: </h4>
+		  							<h2 class="stars inline"> &#9733; &#9733; &#9733; &#9734; &#9734; </h2>
+		  							<br>
+		  							<h4 class="smlHeading"> AVG connection: </h4>
+		  							<h2 class="hearts starsMed inline noSelect"> 
+		  								<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>  
+								    	<i class="material-icons">favorite</i>   	  
+								    </h2>									  							
+		  						</div>
+		  					</div>
+						</div>				  	
+						<div class="mdl-cell mdl-cell--2-col">
+							<h4 class="smlHeading">types of camera</h4>
+							<img src="images/randomGraph1.png">
+							<h4 class="smlHeading">camera up-times</h4>
+							<img src="images/randomGraph2.png">
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
       </div>
 
 
@@ -244,10 +472,13 @@
 		  		<h2> camera stream properties: </h2>
 		  		<div class="mdl-grid">
 		  			<div class="mdl-cell mdl-cell--12-col">
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="cctv">
+						<label id="cctvRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="cctv">
 						  <input type="radio" id="cctv" class="mdl-radio__button" name="options" value="1" checked>
 						  <span class="mdl-radio__label">CCTV (static)</span>
 						</label>
+						<span for="cctvRadio" class="mdl-tooltip mdl-tooltip--large">
+							Caution: This requires the camera's long and lat for the map location.
+						</span>
 						<label id="mobileRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mobile">
 						  <input type="radio" id="mobile" class="mdl-radio__button" name="options" value="2">
 						  <span class="mdl-radio__label">Mobile (roaming)</span>
@@ -257,10 +488,13 @@
 						</span>
 					</div>
 					<div class="mdl-cell mdl-cell--12-col">
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="public">
+						<label id="publicRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="public">
 						  <input type="radio" id="public" class="mdl-radio__button" name="share" value="1" checked>
 						  <span class="mdl-radio__label">Public</span>
 						</label>
+						<span for="publicRadio" class="mdl-tooltip mdl-tooltip--large">
+							Anyone will be able to find your stream on the map.
+						</span>
 						<label id="privateRadio" class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="private">
 						  <input type="radio" id="private" class="mdl-radio__button" name="share" value="2">
 						  <span class="mdl-radio__label">Private</span>

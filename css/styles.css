@@ -328,8 +328,12 @@ p, h1 {
 }
 
 
-.grey {
+.grey, .warning {
 	color: grey !important;
+}
+
+.warning:hover, .is-active {
+	color: red !important;
 }
 
 .white {
@@ -483,7 +487,7 @@ p, h1 {
 }
 
 .signinBG {
-	background-color: #414141 !important;
+	background-color: #414141 !important; /* GREY */
 }
 
 .bottomSpacer {
@@ -501,7 +505,7 @@ p, h1 {
 }
 
 .revealB {
-	padding-left: 65%;
+	padding-left: 60%;
 	padding-right: 0%;
 	background-image: url('../images/mapGrey.png');
 }
@@ -537,13 +541,27 @@ p, h1 {
 	margin-left: 50px;
 }
 
-footer {
-	z-index: 2;
+.homeLink {
+	transition: ease 0.3s;
+}
+
+.homeLink:hover {
+	color: #f7422d !important; /* RED */
+}
+
+.homeButton {
+	color: #ff9900 !important;
+}
+
+.homeButton:hover {
+	color: #f7422d !important;
+    border: 1px solid #f7422d;
 }
 
 
-
-
+footer {
+	z-index: 2;
+}
 
 
 
