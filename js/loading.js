@@ -7,6 +7,6 @@ $(document).ready(function(){
 		$("#cover").fadeOut( "slow", function() {
 		});
     
-    }, 2000);
+    }, 3500);
 
 });

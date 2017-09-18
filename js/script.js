@@ -174,7 +174,7 @@ $(document).on( "change", "input[name=heat]", function() {
 
 // CHANGE HEADER OPACITY WITH OVERLAY
 // https://stackoverflow.com/questions/11962962/overriding-important-with-css-or-jquery
-$('#button_profile').click(function(){
+$('#button_profile, #exitProfile').click(function(){
         if ($("#profile").is(":visible")) {          
             // replace css with '!important' and timer of 200 millis
             setTimeout(function(){
@@ -189,7 +189,7 @@ $('#button_profile').click(function(){
             });           
         }
 });
-$('#button_stats').click(function(){
+$('#button_stats, #exitStats').click(function(){
         if ($("#stats").is(":visible")) {          
             // replace css with '!important' and timer of 200 millis
             setTimeout(function(){
@@ -204,7 +204,7 @@ $('#button_stats').click(function(){
             });           
         }
 });
-$('#button_upload').click(function(){
+$('#button_upload, #exitUpload').click(function(){
         if ($("#upload").is(":visible")) {          
             // replace css with '!important' and timer of 200 millis
             setTimeout(function(){
